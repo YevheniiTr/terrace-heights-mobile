@@ -1,0 +1,109 @@
+.payment{
+    height: 100%;
+    flex: 1 0 auto;
+
+    .form{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    label, input, p{
+        font-family: 'Lora';
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    input, textarea {
+        border-radius: 0;
+        max-width: 384px;
+        min-height: 55px;
+        background-color: $bg-color-footer;
+        border: none;
+    }
+
+    .room-info{
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    .container-custom{
+        flex: 1 0 auto;
+        justify-content: center;
+    }
+
+    .form-col{
+        padding: 0 50px;
+        width: 100%;
+        max-width: 458px;
+        padding-bottom: 15px;
+
+    }
+    .form-col-center{
+        padding: 0 36px;
+        min-height: 75vh;
+        max-width: 458px;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        padding-bottom: 15px;
+
+    }
+
+    .section-title{
+        margin-top: 94px;
+        margin-bottom: 61px;
+        font-family: 'Lora';
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .form-group{
+        margin: 0;
+        margin-top: 6px;
+        label{
+            margin: 0;
+        }
+    }
+
+    .btn{
+        margin: 0 auto;
+        margin-top: 82px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        width: 303px;
+        height: 57px;
+    }
+
+    .first-col{
+        max-width: 413px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        // padding: 10px;
+        .btn{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .form-col-center{
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-col{
+            width: 100%;
+        }
+    }
+}

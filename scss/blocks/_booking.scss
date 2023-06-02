@@ -1,0 +1,77 @@
+.booking{
+    text-align: center;
+    padding-bottom: 88px;
+
+    .section-title{
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 43px;
+    }
+    .section-subtitle{
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 49px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 75px;
+        margin-top: 33px;
+        width: 100%;
+        .card-body{
+            max-width: 774px;
+        }
+
+        .cart-title{
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        .card-text{
+            margin-top: 58px;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        .card-more{
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+            text-decoration-line: underline;
+            color: #AA01B9;
+        }
+
+        .card-price{
+            margin-left: 24px;
+            margin-bottom: 31px;
+            width: 100%;
+            max-width: 216px;
+        }
+
+        .img-fluid{
+            width: 935px;
+            height: 451px;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 1180px){
+    .booking{
+        .card{
+            flex-direction: column;
+            align-items: center;
+            &:nth-child(4), &:nth-child(6), &:nth-child(8){
+                flex-direction: column-reverse;
+            }
+            
+        }
+
+       
+    }
+}
